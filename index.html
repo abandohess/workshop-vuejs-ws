@@ -4,11 +4,18 @@
         <meta charset="utf-8">
         <title>Our First VueJS App!</title>
         <link href="styles.css" rel="stylesheet" />
+        <script src="https://unpkg.com/vue/dist/vue.js"></script>
+        <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
     </head>
     <body>
-        <div id="main-app">
-        </div>
-        
+      <div id="main-app">
+  <div class="links">
+      <router-link to="/">Our OG Punching Bag!</router-link>
+      <router-link to="/tim">Tim's Punching Bag</router-link>
+  </div>
+  <router-view></router-view>
+</div>
+
         <script src="app.js"></script>
     </body>
 </html>
